@@ -36,7 +36,7 @@ const setDark = () => {
 
 };
 
-if (Cookies.get('theme') == "dark") {
+if (Cookies.get('index_theme') == "dark") {
     setDark()
 };
 
@@ -139,7 +139,7 @@ $(() => {
 
         setTimeout(() => {
             $('.loader').fadeOut(1000);
-        }, 750);
+        }, 1000);
     });
 
 });
@@ -154,13 +154,13 @@ socket.on('update', (data) => {
 });
 
 socket.on('settings', (data) => {
-    if (data.theme == "dark") {
+    if (data.theme.index == "dark") {
         setDark()
     };
-    Cookies.set('theme', data.theme, {
+    Cookies.set('index_theme', data.theme.index, {
         expires: 365
     });
-    console.log(`Using ${data.theme} theme`);
+    console.log(`Using ${data.theme.index} theme`);
 });
 
 socket.on('ping', (data) => {

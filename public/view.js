@@ -21,7 +21,7 @@ const setDark = () => {
     }).appendTo("head");
 };
 
-if (Cookies.get('theme') == "dark") {
+if (Cookies.get('view_themee') == "dark") {
     setDark()
 };
 
@@ -75,13 +75,13 @@ socket.on('update', (data) => {
 });
 
 socket.on('settings', (data) => {
-    if (data.theme == "dark") {
+    if (data.theme.view == "dark") {
         setDark()
     };
-    Cookies.set('theme', data.theme, {
+    Cookies.set('view_theme', data.theme.view, {
         expires: 365
     });
-    console.log(`Using ${data.theme} theme`);
+    console.log(`Using ${data.theme.view} theme`);
 });
 
 socket.on('ping', (data) => {

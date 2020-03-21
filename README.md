@@ -2,7 +2,7 @@
 Tell your family when you are in a voice/video call or are recording/streaming with this simple web application, made with Node, designed for Pi.
 
 ## Features
-- Light and Dark theme (change `theme` in `config.js`)
+- Light and Dark theme (change `theme` in `config.js` - the 2 pages have independant theme options)
 - [Animated](https://imgur.com/gallery/UZOyKdE) live-updating viewing page (no need to refresh)
 - Material design
 - Mobile support
@@ -41,6 +41,7 @@ You could install this on an old Windows laptop if you wanted (just download and
 - [Set up Chromium as kiosk and autolaunch](https://pimylifeup.com/raspberry-pi-kiosk/ "Set up Chromium as kiosk and auto-launch") 
 - [Adjust the brightness](https://lb.raspberrypi.org/forums/viewtopic.php?t=214086#p1318236 "Adjust the brightness") (down to 50, from 255)
 - You may want to change `./public/logo.png` and `./public/favicon.ico` (search PNG to ICO converter)
+- Choose the theme each page will use in `config.js` **(control panel and live view page can have different themes)**
 
 ## Live status options
 - Voice-only call/chat

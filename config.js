@@ -1,4 +1,7 @@
 module.exports = {
     port: 80,
-    theme: 'dark'
+    theme: {
+        index: 'light',
+        view: 'dark'
+    }
 };
