@@ -40,6 +40,9 @@ You could install this on an old Windows laptop if you wanted (just download and
 - Run `sudo pm2 startup`, `cd` into the cloned repo, run `sudo pm2 start .` (Appears you need to run as sudo if you want to use port 80)
 - [Set up Chromium as kiosk and autolaunch](https://pimylifeup.com/raspberry-pi-kiosk/ "Set up Chromium as kiosk and auto-launch") 
 - [Adjust the brightness](https://lb.raspberrypi.org/forums/viewtopic.php?t=214086#p1318236 "Adjust the brightness") (down to 50, from 255)
+
+
+**Extra:**
 - You may want to change `./public/logo.png` and `./public/favicon.ico` (search PNG to ICO converter)
 - Choose the theme each page will use in `config.js` **(control panel and live view page can have different themes)**
 
