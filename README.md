@@ -68,6 +68,10 @@ Control panel with dark theme, inactive
 Control panel with dark theme, in a voice chat
 [![Control panel with dark theme, in a voice chat](https://i.imgur.com/UCYjI0M.png "Control panel with dark theme, in a voice chat")](https://i.imgur.com/UCYjI0M.png "Control panel with dark theme, in a voice chat")
 
+
+Control panel with light theme, in a voice chat
+[![Control panel with light theme, in a voice chat](https://i.imgur.com/j9m1bqg.png "Control panel with light theme, in a voice chat")](https://i.imgur.com/j9m1bqg.png "Control panel with light theme, in a voice chat")
+
 #### Live View (http://localhost/view)
 
 Live View page in dark theme, no active users
@@ -75,6 +79,9 @@ Live View page in dark theme, no active users
 
 Live View page in dark theme
 [![Live View page in dark theme](https://i.imgur.com/wFKQvD9.png "Live View page in dark theme")](https://i.imgur.com/wFKQvD9.png "Live View page in dark theme")
+
+Live View page in light theme
+[![Live View page in dark theme](https://i.imgur.com/IMvZIRt.png "Live View page in light theme")](https://i.imgur.com/IMvZIRt.png "Live View page in light theme")
 
 ### Animation
 [![GIF of Live View page](https://i.imgur.com/UZOyKdE.gifv "GIF of Live View page")](https://i.imgur.com/UZOyKdE.gifv "GIF of Live View page")
