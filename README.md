@@ -3,7 +3,7 @@ Tell your family when you are in a voice/video call or are recording/streaming w
 
 ## Features
 - Light and Dark theme (change `theme` in `config.js`)
-- [Animated](https://camo.githubusercontent.com/06e7c3ce0025df3c21c7c7b269598d51dec61b80/68747470733a2f2f692e696d6775722e636f6d2f555a4f794b64452e67696676 "Animated") live-updating viewing page (no need to refresh)
+- [Animated](https://imgur.com/gallery/UZOyKdE) live-updating viewing page (no need to refresh)
 - Material design
 - Mobile support
 - Easy to use (and relatively easy to set up on an old laptop)
