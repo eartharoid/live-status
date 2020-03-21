@@ -40,3 +40,7 @@ html {
     position: fixed;
     color: black !important;
 }
+
+#cookieModal {
+    color: black !important;
+}
