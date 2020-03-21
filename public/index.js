@@ -21,6 +21,24 @@ Cookies.set('name', name, {
 });
 console.log(`Updated 'name' cookie: ${name}`); */
 
+const setDark = () => {
+    $("<link/>", {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "./dark-theme.css",
+        "ea-data": "dark-theme",
+    }).appendTo("head");
+
+    $('#btn4').removeClass(`btn-outline-${colours[4]}`);
+    colours[4] = "light";
+    textColours[4] = "text-white";
+    $('#btn4').addClass(`btn-outline-${colours[4]}`);
+
+};
+
+if (Cookies.get('theme') == "dark") {
+    setDark()
+};
 
 
 const hideCookies = () => {
@@ -40,7 +58,6 @@ const update = (num, emit) => {
             user: name,
             btn: num
         });
-        console.warn("sending")
         console.log(`[SOCKET] (>) Button ${num}`);
     };
 
@@ -119,6 +136,10 @@ $(() => {
         $('#hello').html(`Hello, ${name}.`);
 
         socket.emit('loaded', false);
+
+        setTimeout(() => {
+            $('.loader').fadeOut(1000);
+        }, 750);
     });
 
 });
@@ -132,7 +153,15 @@ socket.on('update', (data) => {
     console.dir(data);
 });
 
-
+socket.on('settings', (data) => {
+    if (data.theme == "dark") {
+        setDark()
+    };
+    Cookies.set('theme', data.theme, {
+        expires: 365
+    });
+    console.log(`Using ${data.theme} theme`);
+});
 
 socket.on('ping', (data) => {
     socket.emit('isAlive', name);

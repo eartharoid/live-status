@@ -1,3 +1,4 @@
 module.exports = {
-    port: 80
+    port: 80,
+    theme: 'dark'
 };

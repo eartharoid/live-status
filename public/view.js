@@ -11,16 +11,36 @@ const colours = ['blue', 'purple', 'orange', 'red'];
 const activity = ['in a voice chat', 'in a video chat', 'recording', 'streaming', 'offline'];
 let html;
 
+
+const setDark = () => {
+    $("<link/>", {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "./dark-theme.css",
+        "ea-data": "dark-theme",
+    }).appendTo("head");
+};
+
+if (Cookies.get('theme') == "dark") {
+    setDark()
+};
+
+
+
 $(() => {
     console.log(`Welcome to the Live Status Live View Panel`);
 
-    socket.emit('loaded', true)
+    socket.emit('loaded', true);
+
+    setTimeout(() => {
+        $('.loader').fadeOut(1000);
+    }, 500);
 });
 
 
 socket.on('update', (data) => {
 
-    if(data.change === false) {
+    if (data.change === false) {
         return console.log("Ignoring update (no change)")
     }
 
@@ -52,6 +72,16 @@ socket.on('update', (data) => {
         `;
     };
     $('#live').html(html);
+});
+
+socket.on('settings', (data) => {
+    if (data.theme == "dark") {
+        setDark()
+    };
+    Cookies.set('theme', data.theme, {
+        expires: 365
+    });
+    console.log(`Using ${data.theme} theme`);
 });
 
 socket.on('ping', (data) => {

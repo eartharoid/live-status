@@ -56,6 +56,7 @@ io.on('connection', (socket) => {
   // connected to client, send them current data
   sock(`Established a socket connection`);
   io.emit('update', {data: currentStatus, change: false});
+  io.emit('settings', config);
 
 
   // upon receiving a status change
