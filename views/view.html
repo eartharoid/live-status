@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Live Status | Live View</title>
+
+    <!--  META DATA  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="title" content="Live Notifier | Live View">
+    <meta name="description" content="Live View | View live updates">
+    <meta name="keywords" content="eartharoid, live, notify, status, control, panel">
+    <meta name="author" content="Eartharoid, contact@eartharoid.me">
+    <meta name="copyright" content="Eartharoid">
+    <meta name="language" content="EN_GB">
+    <meta name="robots" content="index,follow" />
+    <meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="revisit-after" content="7 days">
+    <meta name="owner" content="Ellusion">
+    <meta name="url" content="https://live-status.eartharoid.me">
+    <meta name="og:title" content="Illusion | Home" />
+    <meta name="og:url" content="https://live-status.eartharoid.me" />
+    <meta name="og:image" content="./logo.png" />
+    <meta name="og:site_name" content="Live Notifier" />
+    <meta name="og:description" content="Live View | View live updates" />
+
+    <!--  LINKS  -->
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+</head>
+
+<body>
+    <main class="main" id="content" style="margin-bottom:5%;">
+
+        <div class="container" style="margin-top:5%;" id="top">
+            <noscript>
+                <h1 class="text-danger">JAVASCRIPT IS REQUIRED FOR THIS PAGE TO FUNCTION AS DATA IS TRANSFERED
+                    OVER WEBSOCKETS USING JAVASCRIPT.
+                    PLEASE ENABLE JAVASCRIPT IN YOUR BROWSER'S SETTINGS SO YOUR BROWSER AND THE SERVER CAN COMMUNICATE!
+                </h1>
+                <h6 class="text-danger">YOU ARE A FOOL IF YOU DON'T ENABLE JAVASCRIPT</h6>
+            </noscript>
+            <h1 align="left">Live Status</h1>
+        </div>
+        <div class="container" style="margin-top:2%;" id="live">
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <!--socket.io-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
+
+    <script src="./view.js"></script>
+
+
+</body>
+
+</html>
