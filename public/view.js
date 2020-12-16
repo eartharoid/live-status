@@ -8,7 +8,7 @@
 var socket = io();
 
 const colours = ['blue', 'purple', 'orange', 'red'];
-const activity = ['in a voice chat', 'in a video chat', 'recording', 'streaming', 'offline'];
+const activity = ['in a voice call', 'in a video call', 'recording', 'streaming', 'offline'];
 let html;
 
 
