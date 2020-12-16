@@ -11,7 +11,7 @@ let seln = 4;
 let selected;
 const colours = ['blue', 'purple', 'orange', 'red', 'elegant'];
 const textColours = ['blue-text', 'purple-text', 'orange-text', 'red-text', 'text-dark'];
-const activity = ['in a voice chat', 'in a video chat', 'recording', 'streaming', 'offline'];
+const activity = ['in a voice call', 'in a video call', 'recording', 'streaming', 'offline'];
 
 /* while (!name) {
     name = prompt("Welcome to the Live Status Control Panel\n\nPlease enter your name:\n\n", Cookies.get('name')).trim();
