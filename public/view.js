@@ -21,11 +21,14 @@ const setDark = () => {
     }).appendTo("head");
 };
 
-if (Cookies.get('view_themee') == "dark") {
+if (Cookies.get('view_theme') == "dark") {
     setDark()
 };
 
-
+const remove = user => {
+	console.log('Removing ' + user)
+	socket.emit('setOffline', user);
+};
 
 $(() => {
     console.log(`Welcome to the Live Status Live View Panel`);
@@ -62,7 +65,7 @@ socket.on('update', (data) => {
 
     for (let x in data.data) {
         html += `
-        <div class="row animated slideInUp">
+        <div class="row animated slideInUp" onClick="remove('${x}')" style="cursor:pointer;">
             <div class="card status-card ${colours[data.data[x]]} z-depth-2">
                 <div class="card-body text-center">
                     <h1 class="text-white">${x.toUpperCase()} IS ${activity[data.data[x]].toUpperCase()}</h1>

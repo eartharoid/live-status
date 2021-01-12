@@ -73,6 +73,14 @@ io.on('connection', (socket) => {
     io.emit('update', {data: currentStatus, change: true});
   });
 
+	socket.on('setOffline', (user) => {
+
+		delete currentStatus[user];
+
+		// send new statuses to view page
+		io.emit('update', { data: currentStatus, change: true });
+	});
+
 
   // after loading the page
   socket.on('loaded', (data) => {
